@@ -1,0 +1,25 @@
+.dashboard {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.dashboard h2 {
+  color: #333;
+}
+
+.dashboard-summary {
+  margin-bottom: 20px;
+}
+
+.dashboard-links {
+  display: flex;
+  gap: 10px;
+}
+
+.dashboard-links a {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
