@@ -1,6 +1,11 @@
+body {
+  font-family: var(--font-family);
+  font-weight: 600;
+}
+  
 .dashboard {
   padding: 20px;
-  background-color: #f0f0f0;
+  position: relative;
 }
 
 .dashboard h2 {
@@ -9,6 +14,7 @@
 
 .dashboard-summary {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .dashboard-links {
@@ -22,4 +28,54 @@
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+}
+
+body {
+  background: linear-gradient(-45deg, #ffd9bb, #ffb3cc, #99e6ff, #b3ffec);
+	background-size: 500% 500%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.calendar-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 24px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  position: relative;
 }

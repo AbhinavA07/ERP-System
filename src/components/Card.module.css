@@ -1,0 +1,62 @@
+.card {
+    display: inline-block;
+    width: 230px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-10px);
+}
+
+.icon {
+    margin-bottom: 15px;
+    font-size: 36px;
+}
+
+.imageCard {
+    background-size: cover;
+    background-position: center;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 0, 0, 0.45);
+    z-index: 1;
+    border-radius: inherit;
+    transition: background-color 0.3s;
+}
+
+.card:hover::before {
+    background-color: rgba(1, 0, 0, 0.25);
+}
+
+.card * {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.blurEffect {
+    filter: blur(4px);
+}
+
+.card h3 {
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 18px;
+}

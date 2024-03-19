@@ -4,13 +4,13 @@ import Dashboard from './components/Dashboard';
 import Products from './components/Products';
 import Orders from './components/Orders';
 import Calendar from './components/Calendar';
+import './GlobalStyles.css';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <header className="App-header">
-          {/* Include any header content here */}
         </header>
         <main>
           <Routes>

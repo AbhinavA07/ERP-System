@@ -1,38 +1,52 @@
-// Calendar.js
-import React, { useState } from 'react';
-import styles from './Calendar.module.css';
+import React from 'react';
+import { Calendar, momentLocalizer } from 'react-big-calendar';
+import moment from 'moment';
+import 'react-big-calendar/lib/css/react-big-calendar.css';
 
-const Calendar = () => {
-    // Mock orders data for demonstration
-    const [orders] = useState([
-        { id: 1, orderDate: '2024-03-16', expectedDeliveryDate: '2024-03-20', customerName: 'John Doe' },
-        { id: 2, orderDate: '2024-03-15', expectedDeliveryDate: '2024-03-19', customerName: 'Jane Smith' },
-        { id: 3, orderDate: '2024-03-14', expectedDeliveryDate: '2024-03-18', customerName: 'Alice Johnson' }
-    ]);
+const localizer = momentLocalizer(moment);
 
-    // Function to format date to display in the calendar
-    const formatDate = (dateString) => {
-        const date = new Date(dateString);
-        return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-    };
-
-    return (
-        <div className={styles['calendar-container']}>
-            <h2>Orders Calendar View</h2>
-            <div>
-                {orders.map(order => (
-                    <div key={order.id} className={styles['calendar-item']}>
-                        <div className={styles['date']}>{formatDate(order.expectedDeliveryDate)}</div>
-                        <div className={styles['order-info']}>
-                            <div>Order ID: {order.id}</div>
-                            <div>Customer: {order.customerName}</div>
-                            <div>Order Date: {order.orderDate}</div>
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
+const isEventForDate = (event, date) => {
+  const eventMoment = moment(event.start);
+  return eventMoment.isSame(date, 'day');
 };
 
-export default Calendar;
+const events = [
+  {
+    title: 'Order 1',
+    start: new Date(2024, 2, 1), // March 1, 2024
+    end: new Date(2024, 2, 1),
+  },
+  {
+    title: 'Order 2',
+    start: new Date(2024, 2, 5), // March 5, 2024
+    end: new Date(2024, 2, 5),
+  },
+  {
+    title: 'Order 3',
+    start: new Date(2024, 2, 10), // March 10, 2024
+    end: new Date(2024, 2, 10),
+  },
+];
+
+const CalendarComponent = () => {
+  const handleDateClick = (date) => {
+    const filteredOrders = events.filter((event) => isEventForDate(event, date));
+    console.log('Orders due on', date.toLocaleDateString(), ':', filteredOrders);
+  };
+
+  return (
+    <div onClick={(e) => e.stopPropagation()}>
+      <h2>Orders Calendar</h2>
+      <Calendar
+        localizer={localizer}
+        events={events}
+        startAccessor="start"
+        endAccessor="end"
+        style={{ height: 500 }}
+        onSelect={handleDateClick}
+      />
+    </div>
+  );
+};
+
+export default CalendarComponent;
