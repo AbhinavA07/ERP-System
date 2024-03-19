@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ERP-System/static/css/main.5967071c.css",
-    "main.js": "/ERP-System/static/js/main.6b4b87a1.js",
+    "main.js": "/ERP-System/static/js/main.0d8e8eb7.js",
     "static/media/customers.jpg": "/ERP-System/static/media/customers.8a89ece258f58b82cbbc.jpg",
     "static/media/orders.webp": "/ERP-System/static/media/orders.d6533208ae37079d0821.webp",
     "static/media/products.jpg": "/ERP-System/static/media/products.b5bd93c1b83d294690a4.jpg",
@@ -10,10 +10,10 @@
     "static/media/no-order-512.png": "/ERP-System/static/media/no-order-512.671054144659f901ced5.png",
     "index.html": "/ERP-System/index.html",
     "main.5967071c.css.map": "/ERP-System/static/css/main.5967071c.css.map",
-    "main.6b4b87a1.js.map": "/ERP-System/static/js/main.6b4b87a1.js.map"
+    "main.0d8e8eb7.js.map": "/ERP-System/static/js/main.0d8e8eb7.js.map"
   },
   "entrypoints": [
     "static/css/main.5967071c.css",
-    "static/js/main.6b4b87a1.js"
+    "static/js/main.0d8e8eb7.js"
   ]
 }
