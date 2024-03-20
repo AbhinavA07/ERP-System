@@ -14,6 +14,21 @@ body {
   border: 2px solid #ddd;
 }
 
+@media (max-width: 768px) {
+  .orders-table {
+    font-size: 14px;
+  }
+  .orders-table th, .orders-table td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .orders-table {
+    font-size: 12px;
+  }
+}
+
 .orders-table th, .orders-table td {
   border: 1px solid #ddd;
   padding: 12px;
@@ -36,13 +51,29 @@ body {
 .orders-table tr:hover {
   background-color: #f2f2f2;
 }
-  
-  
+
+.actionColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .actionColumn{
+    flex-direction:row;
+
+  }
+}
+
 .actionBtn {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  margin-top: 5px;
   margin-right: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
   color: #007bff;
 }
 
@@ -58,6 +89,7 @@ body {
   padding: 5px 25px 5px 10px;
   font-size: 14px;
   cursor: pointer;
+  border-radius: 8px;
   background: url('data:image/svg+xml;utf8,<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') no-repeat right 5px center;
 }
 

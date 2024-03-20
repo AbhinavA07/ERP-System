@@ -63,11 +63,17 @@ const Orders = () => {
                                 <td>{order.orderDate}</td>
                                 <td>{order.status}</td>
                                 <td>
+                                    <div className={styles.actionColumn}>
                                     <button className={styles.actionBtn} onClick={() => handleViewDetails(order)}>
                                         <FontAwesomeIcon icon={faEye} />
                                     </button>
                                     <select
                                         className={`${styles.selectStatus} ${styles[order.status.toLowerCase()]}`}
+                                        style={{
+                                            "fontSize": "13px",
+                                            "font-family": "var(--font-family)",
+                                            "fontWeight":"inherit",
+                                          }}
                                         value={order.status}
                                         onChange={(e) => updateStatus(order.id, e.target.value)}
                                     >
@@ -78,6 +84,7 @@ const Orders = () => {
                                     <button className={styles.actionBtn} onClick={() => deleteOrder(order.id)}>
                                         <FontAwesomeIcon icon={faTrashAlt} />
                                     </button>
+                                    </div>
                                 </td>
                             </tr>
                         ))}
@@ -87,7 +94,6 @@ const Orders = () => {
             {showModal && (
                 <div className={styles.modalOverlay} onClick={handleCloseModal}>
                     <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
-                        {/* Close icon */}
                         <button className={styles.closeBtn} onClick={handleCloseModal}>
                             &times;
                         </button>

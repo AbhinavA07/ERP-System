@@ -35,20 +35,20 @@ const Navbar = () => {
                 <div className={styles.content}>
                     <ul>
                         <li><Link to="/">
-                                <FontAwesomeIcon icon={faUsers} />
                                 <span className={styles.linkText}>Home</span>
+                                <FontAwesomeIcon icon={faUsers} style={{"margin-left": "7px"}}/>
                             </Link>
                         </li>
                         <li>
                             <Link to="/products">
-                                <FontAwesomeIcon icon={faBox} />
-                                <span className={styles.linkText}>Products</span>
+                                <span className={styles.linkText}> Products</span>
+                                <FontAwesomeIcon icon={faBox} style={{"margin-left": "7px"}} />
                             </Link>
                         </li>
                         <li>
                             <Link to="/orders">
-                                <FontAwesomeIcon icon={faClipboardList} />
                                 <span className={styles.linkText}>Orders</span>
+                                <FontAwesomeIcon icon={faClipboardList} style={{"margin-left": "7px"}}/>
                             </Link>
                         </li>
                     </ul>

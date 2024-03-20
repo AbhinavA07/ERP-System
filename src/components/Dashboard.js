@@ -33,13 +33,11 @@ const Dashboard = () => {
                     <Card title="Customers" value="100000" />
                     <Card title="Alert" value="20" />
                 </div>
-                {showCalendar && (
-                    <div className={styles['modal-overlay']} onClick={closeModal}>
-                        <div className={styles['modal']}>
-                            <CalendarComponent closeModal={closeModal} />
-                        </div>
+                <div className={`${styles['modal-overlay']} ${showCalendar ? styles.active : ''}`} onClick={closeModal}>
+                    <div className={`${styles['modal']} ${showCalendar ? styles.active : ''}`}>
+                        <CalendarComponent closeModal={closeModal} />
                     </div>
-                )}
+                </div>
                 <div className={styles['dashboard-graph']}>
                     <Graph />
                 </div>

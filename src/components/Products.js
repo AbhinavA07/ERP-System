@@ -183,18 +183,44 @@ const Products = () => {
                         </td>
                         <td>
                             <input
-                                type="number"
+                                type="text"
                                 value={newProductPrice}
-                                onChange={(e) => setNewProductPrice(e.target.value)}
+                                onChange={(e) => {
+                                    const value = e.target.value;
+                                    if (value === "0" || value === "") {
+                                      setNewProductPrice(value);
+                                      return;
+                                    }
+                                    const newValue = value.replace(/^0+/, "");
+                                    if (!/^\d+(\.\d*)?$/.test(newValue)) {
+                                      e.preventDefault();
+                                      return;
+                                    }
+                                    setNewProductPrice(newValue);
+                                }}
                                 placeholder="Enter price"
+                                inputMode='numeric'
                             />
                         </td>
                         <td>
                             <input
-                                type="number"
+                                type="text"
                                 value={newProductStockQuantity}
-                                onChange={(e) => setNewProductStockQuantity(e.target.value)}
+                                onChange={(e) => {
+                                    const value = e.target.value;
+                                    if (value === "0" || value === "") {
+                                      setNewProductStockQuantity(value);
+                                      return;
+                                    }
+                                    const newValue = value.replace(/^0+/, "");
+                                    if (!/^\d+(\.\d*)?$/.test(newValue)) {
+                                      e.preventDefault();
+                                      return;
+                                    }
+                                    setNewProductStockQuantity(newValue);
+                                }}
                                 placeholder="Enter stock quantity"
+                                inputMode='numeric'
                             />
                         </td>
                         <td>

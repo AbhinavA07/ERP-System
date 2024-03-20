@@ -1,3 +1,28 @@
+body {
+  font-family: var(--font-family);
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  input[type="text"], input[type="number"] {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  input[type="text"], input[type="number"] {
+    font-size: 12px;
+  }
+}
+
 .products-container {
   padding: 20px;
 }
@@ -8,6 +33,21 @@
   margin-top: 20px;
   background-color: rgba(255, 255, 255, 0.8);
   border: 2px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .products-table {
+    font-size: 14px;
+  }
+  .products-table th, .products-table td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .products-table {
+    font-size: 12px;
+  }
 }
 
 .products-table th, .products-table td {
