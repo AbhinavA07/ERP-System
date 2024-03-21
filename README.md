@@ -3,7 +3,7 @@ The documentation contains details about the various components of the web appli
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Using the Application](#using-the-application)
+2. [Using the Website](#using-the-website)
 3. [Screenshots](#screenshots)
 
 ## Introduction
@@ -36,29 +36,43 @@ The home page opens with a dashboard containing options cards showing various st
 Below are screenshots demonstrating the functionality of the web application:
 
 ![Home Page](https://github.com/AbhinavA07/ERP-System/assets/130666959/b500195e-3292-4657-ba2d-1561d827d741)
+The Home Page
 
 ![Navbar](https://github.com/AbhinavA07/ERP-System/assets/130666959/67e50524-ded9-413b-ae50-807a992b0de6)
+The Navigation Bar
 
-![Product Management](https://github.com/AbhinavA07/ERP-System/assets/130666959/55d75424-112f-44ad-85c7-d8abfe550ab0)
+![Products Management](https://github.com/AbhinavA07/ERP-System/assets/130666959/55d75424-112f-44ad-85c7-d8abfe550ab0)
+Products Management Page
 
 ![Edit Option](https://github.com/AbhinavA07/ERP-System/assets/130666959/d4d7ee64-d8fe-49c0-82ff-8fa5e25bfe85)
+Editing Option
 
 ![Pop Up 1](https://github.com/AbhinavA07/ERP-System/assets/130666959/42577569-1327-4005-b708-8ab56eb203ae)
+Pop Up 1
 
 ![Pop Up 2](https://github.com/AbhinavA07/ERP-System/assets/130666959/16f067ec-8340-44d8-8cf2-83ece9fdbf6c)
+Pop Up 2
 
 ![Orders Management](https://github.com/AbhinavA07/ERP-System/assets/130666959/9319f0c8-09c0-4868-a432-937e936c052d)
+Orders Management Page
 
 ![Setting The Status](https://github.com/AbhinavA07/ERP-System/assets/130666959/cdc7aad8-718b-45e4-93c7-f3d6313c688e)
+Setting the Status of the Order
 
 ![Order Details](https://github.com/AbhinavA07/ERP-System/assets/130666959/3de011bb-13de-4059-95ed-cc46f5f5b79c)
+Order Details
 
 ![No Orders](https://github.com/AbhinavA07/ERP-System/assets/130666959/66eef283-be7c-4935-b3da-0196526caa66)
+When there are no orders or all the orders are deleted
 
-![Order Event(Click on the date)](https://github.com/AbhinavA07/ERP-System/assets/130666959/4263153a-38b7-4aec-b6ad-96885617720c)
+![Order Event](https://github.com/AbhinavA07/ERP-System/assets/130666959/4263153a-38b7-4aec-b6ad-96885617720c)
+Order Event(Click on the date)
 
 ![Orders for the day](https://github.com/AbhinavA07/ERP-System/assets/130666959/d73d63b3-4142-4d21-8c1f-141110e1d938)
+Orders for the day
 
 ![Orders for the month](https://github.com/AbhinavA07/ERP-System/assets/130666959/f5c059bb-9437-44c5-8c3f-97d28d66ef00)
+Orders for the month
+
 
 Thank you for reading this documentation!
