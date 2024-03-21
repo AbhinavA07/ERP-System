@@ -39,7 +39,7 @@ const Graph = () => {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
       <div style={{ flex: '1', margin: '10px', backgroundColor: 'rgba(255, 255, 255, 0.8)', borderRadius: '10px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }}>
-        <h2 style={{ textAlign: 'center', color: '#333' }}>Sales and Expenses Chart</h2>
+        <h2 style={{ textAlign: 'center', color: '#333' , padding: '6px'}}>Sales and Expenses Chart</h2>
         <BarChart width={chartWidth} height={300} data={barChartData}>
           <XAxis dataKey="name" />
           <YAxis />
@@ -52,7 +52,7 @@ const Graph = () => {
       </div>
 
       <div style={{ flex: '1', margin: '10px', backgroundColor: 'rgba(255, 255, 255, 0.8)', borderRadius: '10px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }}>
-        <h2 style={{ textAlign: 'center', color: '#333' }}>Revenue Trends</h2>
+        <h2 style={{ textAlign: 'center', color: '#333' , padding: '6px'}}>Revenue Trends</h2>
         <LineChart width={chartWidth} height={300} data={lineChartData}>
           <XAxis dataKey="name" />
           <YAxis />

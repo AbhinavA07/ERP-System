@@ -19,7 +19,7 @@ body {
     font-size: 14px;
   }
   .orders-table th, .orders-table td {
-    padding: 8px;
+    padding: 6px;
   }
 }
 
@@ -31,7 +31,7 @@ body {
 
 .orders-table th, .orders-table td {
   border: 1px solid #ddd;
-  padding: 12px;
+  padding: 8px;
 }
 
 .orders-table th {
@@ -62,7 +62,6 @@ body {
 @media (min-width: 576px) {
   .actionColumn{
     flex-direction:row;
-
   }
 }
 
