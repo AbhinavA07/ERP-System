@@ -35,21 +35,6 @@ input[type="text"], input[type="number"] {
   border: 2px solid #ddd;
 }
 
-@media (max-width: 768px) {
-  .products-table {
-    font-size: 14px;
-  }
-  .products-table th, .products-table td {
-    padding: 8px;
-  }
-}
-
-@media (max-width: 576px) {
-  .products-table {
-    font-size: 12px;
-  }
-}
-
 .products-table th, .products-table td {
   border: 1px solid #ddd;
   padding: 12px;
@@ -63,6 +48,21 @@ input[type="text"], input[type="number"] {
 .products-table td {
   text-align: center;
   color: #666;
+}
+
+@media (max-width: 768px) {
+  .products-table {
+    font-size: 14px;
+  }
+  .products-table th, .products-table td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .products-table {
+    font-size: 12px;
+  }
 }
 
 .products-table tr:nth-child(even) {
